@@ -22,8 +22,8 @@ def listar(request):
         'gatos': [
             {'nombre': 'Jinx', 'raza': 'Himalaya', 'edad': 1, 'genero': 'Hembra', 'color': 'Gris', 'peso': '3kg'},
             {'nombre': 'Belatrix', 'raza': 'Angora', 'edad': 5, 'genero': 'Hembra', 'color': 'Negro', 'peso': '5kg'},
-            {'nombre': 'Aaron', 'raza': 'Siamés', 'edad': 7, 'genero': 'macho', 'color': 'rusio', 'peso': '8kg'},
-            {'nombre': 'King', 'raza': 'Persa', 'edad': 14, 'genero': 'macho', 'color': 'rusio', 'peso': '8kg'}
+            {'nombre': 'Aaron', 'raza': 'Siamés', 'edad': 2, 'genero': 'Macho', 'color': 'Blanco', 'peso': '3kg'},
+            {'nombre': 'King', 'raza': 'Persa', 'edad': 9, 'genero': 'Macho', 'color': 'Rubio', 'peso': '6kg'}
         ]
     }
     return render(
