@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>Formulario</title>
+    </head>
+    <body>
+        <h2 style='text-align: center;'>Formulario de registro</h2>
+        <form type='post' style='display: flex, flex-direction = column; margin: auto; width: 150px; background: aqua;'>
+            <select style='width: 100%'>
+                <option hidden selected>Seleccione Marca</option>
+                <option value='1'>xiaomi</option>
+                <option value='2'>iphone</option>
+                <option value='3'>motorola</option>
+                <option value='4'>lg</option>
+            </select>
+            <input style='width: 100%' type='text' placeholder='Ingrese modelo'/>
+            <input style='width: 100%' type='number' placeholder='ingrese año' min='1' pattern/>
+            <p style='font-size: 15px'>Ingrese la Fecha de compra:</p>
+            <input type='date'/>
+        </form>
+    </body>
+</html>

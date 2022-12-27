@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <title>Celulares</title>
+    </head>
+    <body>
+        <h2 style='text-align: center;'>Lista de dispositivos moviles</h2>
+        <table style='border: thin solid black; margin: auto;'>
+            <thead>
+                <tr>
+                    <th>Marca</th>
+                    <th>Modelo</th>
+                    <th>Año</th>
+                    <th>Fecha de compra</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for c in celulares %}
+                    <tr>
+                        <td>{{c.marca}}</td>
+                        <td>{{c.modelo}}</td>
+                        <td>{{c.año}}</td>
+                        <td>{{c.fecha}}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+
+        <h2 style='text-align: center;'>Lista de dispositivos moviles con condicional</h2>
+        <table style='border: thin solid black; margin: auto;'>
+            <thead>
+                <tr>
+                    <th>Marca</th>
+                    <th>Modelo</th>
+                    <th>Año</th>
+                    <th>Fecha de compra</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for c in celulares %}
+                    {% if  c.marca == 'xiaomi' and c.año > 2020 %}
+                        <tr>
+                            <td>{{c.marca}}</td>
+                            <td>{{c.modelo}}</td>
+                            <td>{{c.año}}</td>
+                            <td>{{c.fecha}}</td>
+                        </tr>
+                    {% endif %}
+                {% endfor %}
+            </tbody>
+        </table>
+    </body>
+</html>
