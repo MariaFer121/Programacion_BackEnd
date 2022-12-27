@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <title>Zapatillas</title>
+    </head>
+    <body>
+        <h2 style='text-align: center;'>Lista de Zapatillas</h2>
+        <table style='border: thin solid black; margin: auto;'>
+            <thead>
+                <tr>
+                    <th>Marca</th>
+                    <th>Modelo</th>
+                    <th>Color</th>
+                    <th>Talla</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for c in zapatillas %}
+                    <tr>
+                        <td>{{c.marca}}</td>
+                        <td>{{c.modelo}}</td>
+                        <td>{{c.color}}</td>
+                        <td>{{c.talla}}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+
+        <h2 style='text-align: center;'>Lista de zapatillas con filtto</h2>
+        <table style='border: thin solid black; margin: auto;'>
+            <thead>
+                <tr>
+                    <th>Marca</th>
+                    <th>Modelo</th>
+                    <th>Color</th>
+                    <th>Talla</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for c in zapatillas %}
+                    {% if  c.marca == 'nike' %}
+                        <tr>
+                            <td>{{c.marca}}</td>
+                            <td>{{c.modelo}}</td>
+                            <td>{{c.color}}</td>
+                            <td>{{c.talla}}</td>
+                        </tr>
+                    {% endif %}
+                {% endfor %}
+            </tbody>
+        </table>
+    </body>
+</html>

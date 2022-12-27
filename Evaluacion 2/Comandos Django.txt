@@ -1,0 +1,6 @@
+Comando para crear proyecto
+django-admin startproject "proyecto"
+Comando para rear aplicacion
+django-admin startapp "zapatillas"
+Comando para hechar a correr el servidor 
+python manage.py runserver  

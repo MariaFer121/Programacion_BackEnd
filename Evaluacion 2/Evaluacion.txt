@@ -1,0 +1,10 @@
+>>> from musica.models import Genero
+>>> Genero.objects.all()
+
+ from musica.models import MusicosGrupos
+MusicoGrupos.objets.create(
+grupos = 'juanitox'
+musicos ='jose'
+instrumento = 'guitarra'
+fecha_inicio= '12-02-98'
+fecha_fin='23-08-98'
